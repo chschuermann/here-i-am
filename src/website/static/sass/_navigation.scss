@@ -1,0 +1,34 @@
+/* NAVIGATION
+##################################################################################################################### */
+
+// Main navigation
+#main-navigation {
+	margin-right: -$column-gutter/2; margin-left: -$column-gutter/2;
+	ul { margin: 0; padding: 0;
+		li { list-style: none;
+			a { display: block; padding: 0 1em; line-height: 3em; color: $white;
+				border-top: 1px solid $gray-darker; @include transition(all .1s ease-in-out);
+				&:hover, &:focus, &:active { background: lighten($black, 15%); }
+			}
+		}
+	}
+	// Breakpoints
+	@media #{$small} {
+		float: right; margin-left: auto;
+		ul li { float: left;
+			a { @include inline-block(top); border-top: 0; border-left: 1px solid $gray-darker; }
+		}
+	}
+}
+
+// Side navigation
+.side-navigation {
+	ul { margin: 0; padding: 0; border-top: 1px solid $gray-lighter;
+		li { list-style: none;
+			a { display: block; padding: .75em 1em; color: $body-font-color; border-bottom: 1px solid $gray-lighter; }
+			&.active {
+				a { font-weight: $font-weight-semibold; background: $gray-lightest; }
+			}
+		}
+	}
+}

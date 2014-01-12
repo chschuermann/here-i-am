@@ -1,0 +1,14 @@
+/* BUTTONS
+##################################################################################################################### */
+
+// Button default
+.btn { @include inline-block(middle); margin-bottom: .5em; border: 0; padding: emCalc(10, 15); color: $white;
+	background: $gray-dark; @include transition(all .12s ease-in-out);
+	&:hover, &:active, &:focus { color: $white; background: $gray-darker; }
+}
+
+// Button small
+.btn-small { @extend .btn; font-size: .85em; }
+
+// Button large
+.btn-large { @extend .btn; font-size: 1.25em; }

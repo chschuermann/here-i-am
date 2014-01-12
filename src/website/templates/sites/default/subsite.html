@@ -1,0 +1,24 @@
+{% extends 'sites/default/base_default.html' %}
+
+{% load cms_tags %}
+{% load i18n %}
+
+{% block head-content %}
+
+	<hgroup>
+		<h1>Subsite.</h1>
+		<h3>The template for all content related stuff.</h3>
+	</hgroup>
+
+{% endblock %}
+
+
+{% block content %}
+
+	<div class="row">
+		<div class="small-12 columns">
+			{% placeholder "content" %}
+		</div>
+	</div>
+
+{% endblock content %}

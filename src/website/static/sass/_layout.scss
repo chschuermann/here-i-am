@@ -1,0 +1,13 @@
+/* LAYOUT
+##################################################################################################################### */
+
+html, body { height: 100%; }
+body { background: $gray-lighter; font-size: $project-base-font-size; }
+
+// Top bar
+#top-bar { @include clearfix(); padding: 0 $column-gutter/2; background: $black; }
+
+// Site content
+#site-content {
+	min-height: emCalc(400); padding: $column-gutter 0; background: $white;
+}

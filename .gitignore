@@ -1,0 +1,29 @@
+############################ ATTENTION #################################
+# Please do not add the temp files of your editor of choice
+# to this gitignore file. Consider a global gitignore file instead.
+########################################################################
+
+# Python bytecode:
+*.py[co]
+
+# Packaging files:
+*.egg*
+
+# Temp files:
+*~
+
+# SQLite3 database files:
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs:
+*.log
+
+# Project specific ignores:
+/database
+/envs
+/media
+/static
+/temp
+*.sass-cache/

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% load cms_tags %}
+{% load menu_tags %}
+{% load stack_tags %}
+{% load sekizai_tags %}
+{% load i18n %}
+
+
+{% block body %}
+
+	{% cms_toolbar %}
+
+	{% addtoblock "css" %}
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" />
+	{% endaddtoblock %}
+
+	{% addtoblock "js_head" %}
+		<script type="text/javascript" src="//use.typekit.net/ipq0lxk.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<!--[if lt IE 9]><script type="text/javascript" src="{{ STATIC_URL }}scripts/respond.min.js"></script><![endif]-->
+		<script src="{{ STATIC_URL }}scripts/libs/modernizr-2.6.2.js"></script>
+		<script src="{{ STATIC_URL }}scripts/libs/jquery-1.10.2.min.js"></script>
+	{% endaddtoblock %}
+
+		<div id="top-bar">
+				<h2 id="logo"><a href="/">Here I Am</a></h2>
+
+				{% block main_nav %}
+			<nav id="main-navigation">
+				<ul role="navigation">
+					{% show_menu 0 1 0 0 %}
+				</ul>
+			</nav>
+		{% endblock main_nav %}
+
+			</div>
+
+		<header id="site-header" role="banner">
+		<div class="row">
+			<div class="small-12 columns">
+				{% block head-content %}{% endblock %}
+			</div>
+		</div>
+	</header>
+
+		<div id="site-content" role="main">
+		{% block content %}{% endblock %}
+	</div>
+
+		<footer id="site-footer" role="contentinfo">
+		<div class="row">
+
+			<div class="small-12 large-4 columns">
+				<h3>Want more?</h3>
+				<ul>
+					<li>Tristique Ornare Etiam mollis euismod</li>
+					<li>Lorem Fermentum</li>
+					<li>Mollis Vestibulum Ornare Bibendum</li>
+					<li>Dolor Dapibus Tortor Cras</li>
+					<li>Cras Vestibulum Purus</li>
+				</ul>
+			</div>
+
+			<div class="small-12 large-4 columns">
+				<h3>Talk to us.</h3>
+				<p>Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Sed posuere consectetur est at lobortis Maecenas sed diam eget risus.</p>
+			</div>
+
+			<div class="small-12 large-4 columns">
+				<h3>Stay in touch.</h3>
+				<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.</p>
+			</div>
+
+		</div>
+	</footer>
+
+{% endblock %}

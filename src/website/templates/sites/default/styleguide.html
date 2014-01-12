@@ -1,0 +1,419 @@
+{% extends 'sites/default/base_default.html' %}
+
+
+{% block head-content %}
+
+	<hgroup>
+		<h1>Styleguide.</h1>
+		<h3>All styles & elements at a glance.</h3>
+	</hgroup>
+
+{% endblock %}
+
+
+{% block content %}
+
+	{# Styleguide #}
+	<div id="styleguide" class="row">
+
+		{# Side #}
+{#		<div class="small-12 large-3 columns">#}
+{#			<nav id="styleguide-navigation" class="side-navigation">#}
+{#				<ul role="navigation">#}
+{#					<li><a href="">Colors</a></li>#}
+{#					<li class="active"><a href="">Typography</a></li>#}
+{#					<li><a href="">Tables</a></li>#}
+{#					<li><a href="">Forms</a></li>#}
+{#					<li><a href="">Buttons</a></li>#}
+{#					<li><a href="">Alerts</a></li>#}
+{#				</ul>#}
+{#			</nav>#}
+{#		</div>#}
+
+		{# Main #}
+		<div class="small-12 columns">
+
+			{# Colors #}
+			<section id="colors">
+				<h2>Colors</h2>
+				<div class="area">
+					<ul id="color-pallet" class="small-block-grid-3 large-block-grid-6">
+						<li class="color-1"><small><strong>Sky Blue</strong><br/>rgb(137,196,230)</small></li>
+						<li class="color-2"><small><strong>Simple Cyan</strong><br/>rgb(137,230,207)</small></li>
+						<li class="color-3"><small><strong>Light Green</strong><br/>rgb(131,217,125)</small></li>
+						<li class="color-4"><small><strong>Grassy Green</strong><br/>rgb(160,192,98)</small></li>
+						<li class="color-5"><small><strong>Sunny Orange</strong><br/>rgb(137,196,230)</small></li>
+						<li class="color-6"><small><strong>Wicked Red</strong><br/>rgb(137,196,230)</small></li>
+					</ul>
+				</div>
+			</section>
+
+			{# Typography #}
+			<section id="typo">
+				<h2>Typography</h2>
+				<div class="area">
+					<div class="row">
+						<div class="small-12 columns">
+							<h1>Header h1 <small>Small text</small></h1>
+							<h2>Header h2 <small>Small text</small></h2>
+							<h3>Header h3</h3>
+							<h4>Header h4</h4>
+							<h5>Header h5</h5>
+							<h6>Header h6</h6>
+						</div>
+					</div>
+				</div>
+				<div class="area">
+					<div class="row">
+						<div class="small-12 large-9 columns">
+							<h4>Paragraph</h4>
+							<p>Aenean lacinia bibendum <a href="">Nullam quis risus</a> sed consectetur. Fusce dapibus, <strong>Bold Text</strong> ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+							<p>Vestibulum id ligula <em>Italic Text</em> felis euismod semper. Donec <code>Code Text</code> nulla non metus auctor fringilla. Pellentesque <small>Aenean eu leo quam</small> ornare sem lacinia quam <kbd>Keyboard Text</kbd> vestibulum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+						</div>
+						<div class="small-12 large-3 columns">
+							<p>
+								<strong>Bold Text</strong><br/>
+								<em>Italic Text</em><br/>
+								<small>Small Text</small><br/>
+								<code>Code Text</code><br/>
+								<kbd>Keyboard Text</kbd><br/>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="area">
+					<div class="row">
+						<div class="small-12 large-4 columns">
+							<h4>Unordered List</h4>
+							<ul>
+								<li>List item</li>
+								<li>List item
+									<ul>
+										<li>Nested List Item</li>
+										<li>Nested List Item</li>
+										<li>Nested List Item</li>
+									</ul>
+								</li>
+								<li>List item</li>
+								<li>List item</li>
+							</ul>
+						</div>
+						<div class="small-12 large-4 columns">
+							<h4>Ordered List</h4>
+							<ol>
+								<li>List Item</li>
+								<li>List Item
+									<ul>
+										<li>Nested List Item</li>
+										<li>Nested List Item</li>
+										<li>Nested List Item</li>
+									</ul>
+								</li>
+								<li>List Item</li>
+								<li>List Item</li>
+							</ol>
+						</div>
+						<div class="small-12 large-4 columns">
+							<h4>Definition List</h4>
+							<dl>
+								<dt>Definition Title</dt>
+								<dd>Definition text, donec id elit non mi porta gravida at eget metus.</dd>
+								<dt>Definition Title</dt>
+								<dd>Definition text, donec id elit non mi porta gravida at eget metus.</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				<div class="area">
+					<div class="row">
+						<div class="small-12 columns">
+							<h4>Blockquote</h4>
+							<blockquote>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{# Tables #}
+			<section id="tables">
+				<h2>Tables</h2>
+				<div class="area">
+					<div class="row">
+						<div class="small-12 columns">
+							<h4>Basic Table</h4>
+							<table class="table">
+								<thead>
+								<tr>
+									<th>#</th>
+									<th>First Name</th>
+									<th>Last Name</th>
+									<th>Username</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{# Forms #}
+			<section id="colors">
+				<h2>Forms</h2>
+				<div class="area">
+					<form action="">
+						<div class="alert-warning">
+							<p class="halfspace"><strong>Oops!</strong> There are some form error, please check it.</p>
+							<ul>
+								<li>Pharetra Bibendum Parturient</li>
+								<li>Sit Tellus Mattis Vulputate Lorem Quam</li>
+								<li>Pharetra Sollicitudin Consectetur Mattis</li>
+							</ul>
+						</div>
+						<fieldset>
+							<legend>Text Inputs</legend>
+							<div class="row">
+								<div class="small-12 columns">
+									<div>
+										<label>Input Label</label>
+										<input type="text" placeholder="Input Text">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 large-6 columns">
+									<div>
+										<label>Input Label</label>
+										<input type="text" placeholder="Input Text">
+									</div>
+								</div>
+								<div class="small-12 large-6 columns">
+									<div class="form-error">
+										<label>Input Label</label>
+										<input type="text" placeholder="Input Text">
+										<small class="error">Invalid entry</small>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 columns">
+									<div>
+										<label>Textarea Label</label>
+										<textarea placeholder="Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec ullamcorper nulla non metus auctor fringilla."></textarea>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Radios & Checkboxes</legend>
+							<div class="row">
+								<div class="small-12 large-6 columns">
+									<div>
+										<div class="radio">
+											<label for="simple-radio-1"><input type="radio" name="simple-radio-1" id="simple-radio-1" value="1">Radio Label</label>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 large-6 columns">
+									<div class="form-error">
+										<div class="radio">
+											<label for="simple-radio-2"><input type="radio" name="simple-radio-2" id="simple-radio-2" value="1">Radio Label</label>
+										</div>
+										<small class="error">Invalid entry</small>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 large-6 columns">
+									<div>
+										<div class="checkbox">
+											<label for="simple-checkbox-1"><input type="checkbox" name="simple-checkbox-1" id="simple-checkbox-1" value="1">Checkbox Label</label>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 large-6 columns">
+									<div class="form-error">
+										<div class="radio">
+											<label for="simple-checkbox-2"><input type="checkbox" name="simple-checkbox-2" id="simple-checkbox-2" value="1">Checkbox Label</label>
+										</div>
+										<small class="error">Invalid entry</small>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 large-6 columns">
+									<div>
+										<ul class="radio-group">
+											<li><label for="groupradio-1"><input type="radio" name="radio-group-1" id="groupradio-1" value="1">Radio Label</label></li>
+											<li><label for="groupradio-2"><input type="radio" name="radio-group-1" id="groupradio-2" value="2">Radio Label</label></li>
+											<li><label for="groupradio-3"><input type="radio" name="radio-group-1" id="groupradio-3" value="3">Radio Label</label></li>
+										</ul>
+									</div>
+								</div>
+								<div class="small-12 large-6 columns">
+									<div class="form-error">
+										<ul class="radio-group">
+											<li><label for="groupradio-4"><input type="radio" name="radio-group-2" id="groupradio-4" value="4">Radio Label</label></li>
+											<li><label for="groupradio-5"><input type="radio" name="radio-group-2" id="groupradio-5" value="5">Radio Label</label></li>
+											<li><label for="groupradio-6"><input type="radio" name="radio-group-2" id="groupradio-6" value="6">Radio Label</label></li>
+										</ul>
+										<small class="error">Invalid entry</small>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 large-6 columns">
+									<div>
+										<ul class="checkbox-group">
+											<li><label for="groupcheckbox-1"><input type="checkbox" name="checkbox-group-1" id="groupcheckbox-1" value="1">Checkbox Label</label></li>
+											<li><label for="groupcheckbox-2"><input type="checkbox" name="checkbox-group-1" id="groupcheckbox-2" value="2">Checkbox Label</label></li>
+											<li><label for="groupcheckbox-3"><input type="checkbox" name="checkbox-group-1" id="groupcheckbox-3" value="3">Checkbox Label</label></li>
+										</ul>
+									</div>
+								</div>
+								<div class="small-12 large-6 columns">
+									<div class="form-error">
+										<ul class="checkbox-group">
+											<li><label for="groupcheckbox-4"><input type="checkbox" name="checkbox-group-2" id="groupcheckbox-4" value="4">Checkbox Label</label></li>
+											<li><label for="groupcheckbox-5"><input type="checkbox" name="checkbox-group-2" id="groupcheckbox-5" value="5">Checkbox Label</label></li>
+											<li><label for="groupcheckbox-6"><input type="checkbox" name="checkbox-group-2" id="groupcheckbox-6" value="6">Checkbox Label</label></li>
+										</ul>
+										<small class="error">Invalid entry</small>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend>Selects & File Uploads</legend>
+							<div class="row">
+								<div class="small-12 large-6 columns">
+									<div>
+										<div class="select">
+											<label for="dropdown-1">Dropdown Label</label>
+											<select id="dropdown-1">
+												<option>This is a dropdown</option>
+												<option disabled>This is another option</option>
+												<option>This is another option too</option>
+												<option>Look, a third option</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="small-12 large-6 columns">
+									<div class="form-error">
+										<div class="select">
+											<label for="dropdown-2">Dropdown Label</label>
+											<select id="dropdown-2">
+												<option>This is a dropdown</option>
+												<option disabled>This is another option</option>
+												<option>This is another option too</option>
+												<option>Look, a third option</option>
+											</select>
+										</div>
+										<small class="error">Invalid entry</small>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 large-6 columns">
+									<div>
+										<div class="file">
+											<label for="input-1">File input</label>
+											<input type="file" id="input-1">
+										</div>
+									</div>
+								</div>
+								<div class="small-12 large-6 columns">
+									<div class="form-error">
+										<div class="file">
+											<label for="input-2">File input</label>
+											<input type="file" id="input-2">
+										</div>
+										<small class="error">Invalid entry</small>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+						<input type="submit" value="Send this form">
+					</form>
+				</div>
+			</section>
+
+			{# Buttons #}
+			<section id="buttons">
+				<h2>Buttons</h2>
+				<div class="area">
+					<div class="row">
+						<div class="small-12 large-4 columns">
+							<h3>Basic Buttons</h3>
+							<a href="#" class="btn-small">Small Button</a><br/>
+							<a href="#" class="btn">Default Button</a><br/>
+							<a href="#" class="btn-large">Large Button</a>
+						</div>
+						<div class="small-12 large-8 columns">
+							<h3>Inline Buttons (inkl. Submit Button)</h3>
+							<a href="#" class="btn-small">Inline Button</a>
+							<a href="#" class="btn-small">Inline Button</a>
+							<input class="btn-small" type="submit" value="Send it">
+							<a href="#" class="btn-small">Inline Button</a><br/>
+
+							<a href="#" class="btn">Inline Button</a>
+							<a href="#" class="btn">Inline Button</a>
+							<input type="submit" value="Send it">
+							<a href="#" class="btn">Inline Button</a><br/>
+
+							<a href="#" class="btn-large">Inline Button</a>
+							<a href="#" class="btn-large">Inline Button</a>
+							<input class="btn-large" type="submit" value="Send it">
+							<a href="#" class="btn-large">Inline Button</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{# Alerts #}
+			<section id="buttons">
+				<h2>Alerts</h2>
+				<div class="area">
+					<div class="row">
+						<div class="small-12 columns">
+							<div class="alert-warning">
+								<p><strong>Warning!</strong> Best check yo self, you're not looking too good.</p>
+							</div>
+							<div class="alert-success">
+								<p><strong>Well done!</strong> You successfully read this important alert message.</p>
+							</div>
+							<div class="alert-info">
+								<p><strong>Heads up!</strong> This alert needs your attention, but it's not super important.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</div>
+
+{% endblock content %}

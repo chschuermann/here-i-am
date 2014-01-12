@@ -1,0 +1,54 @@
+/* FORMS
+##################################################################################################################### */
+
+// Main
+form .columns > div { margin-bottom: 1em; }
+
+// Legends
+legend { background: none; }
+
+// Label
+label { position: relative; line-height: 1.8em; }
+
+// Text Inputs
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"],
+input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"],
+input[type="tel"], input[type="time"], input[type="url"], textarea {
+	margin-bottom: .75em; @include border-radius(0); padding: emCalc(15, 10); @include placeholder-color($gray);
+}
+textarea { min-height: emCalc(150); }
+
+// Radio & Checkboxes
+.radio-group, .checkbox-group, .radio-group-inline, .checkbox-group-inline {
+	margin-bottom: 0;
+	li { list-style: none; }
+}
+.radio-group-inline, .checkbox-group-inline {
+	@include clearfix();
+	label { float: left; margin: 0 1em .5em 0; @include inline-block(); }
+}
+input[type="radio"], input[type="checkbox"] {
+	position: absolute; top: 1px; left: 0; margin: 0 emCalc(5) 0 0;
+}
+input[type="checkbox"] { top: 2px; }
+
+// Selects & Files
+select, input[type="file"] { font-size: 1.2em; }
+
+// Errors
+.form-error {
+	input { margin-bottom: 0; border: 1px solid $warning-color !important; border-bottom: 0;
+		&:hover, &:active, &:focus { border-color: $warning-color !important; }
+	}
+	.radio, .radio-group, .radio-group-inline, .checkbox-group, .checkbox-group-inline, .select, .file {
+		border: 1px solid $warning-color; border-bottom: 0; padding: emCalc(10,10,5,10);
+		input { border-color: auto; }
+	}
+	select, input[type="file"] { margin-bottom: emCalc(5); }
+	input[type="file"] { border: 0 !important; }
+	small.error { margin: 0 0 emCalc(20) 0; padding: emCalc(10, 14); line-height: 1.4em;
+		background: $warning-color !important; }
+}
+
+// Submit button
+input[type="submit"] { @extend .btn; line-height: 1em; };

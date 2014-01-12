@@ -1,0 +1,30 @@
+/* STYLEGUIDE
+##################################################################################################################### */
+
+#styleguide {
+
+	// Sections
+	section { margin-bottom: $column-gutter;
+		> h2 { color: $gray; }
+		.area { margin-bottom: $column-gutter; padding: $column-gutter/2; border: 1px solid $gray-lighter;
+			@include border-radius(3px); background: $gray-lightest; }
+	}
+
+	// Colors
+	#colors {
+		// Color pallet
+		#color-pallet { margin: 0; padding: 0;
+			li { position: relative; overflow: hidden; height: 135px;
+				@for $i from 1 through length($styleguide-colors) {
+					&:nth-child(#{$i}) { background: nth($styleguide-colors, $i); }
+				}
+				small { position: absolute; bottom: -21px; left: 0; width: 100%; padding: .5em 1em; line-height: 2em;
+					background: rgba(255,255,255,.3); @include transition(all .15s ease-in-out); }
+				&:hover, &:focus {
+					small { bottom: 0; }
+				}
+			}
+		}
+	}
+
+}
